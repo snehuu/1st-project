@@ -1,0 +1,41 @@
+print("\n\nA Covid-19 hospital bed booking \n")
+restart = ('Y')
+
+while restart != ('N','NO','n','no'):
+	print("1.Check available bed status")
+	print("2.Bed Booking")
+	option = int(input("\nEnter your option : "))
+
+	if option == 1:
+		print("Your bed status is not available right now ")
+		exit(0)
+
+	elif option == 2:
+		people = int(input("\nEnter no. of bed you want : "))
+		critical_patient_level = []
+		pin_code = []
+		hospital = []
+		for p in range(people):
+			critical_patient_level = str(input("\nlevel : "))
+			level.append(level)
+			pin_code  = int(input("\ncode  : "))
+			code.append(code)
+			hospital_name  = str(input("\nname : "))
+			name.append(name)
+
+		restart = str(input("\nDid you forgot someone? y/n: "))
+		if restart in ('y','YES','yes','Yes'):
+			restart = ('Y')
+		else :
+			x = 0
+			print("\nTotal bed : ",people)
+			for p in range(1,people+1):
+				print("bed : ",p)
+				print("critical_patient_level : ", level[x])
+				print("code  : ", code[x])
+				print("hospital_name : ",name[x])
+				x += 1
+
+
+
+	
